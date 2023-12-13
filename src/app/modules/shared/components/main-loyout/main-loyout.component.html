@@ -1,0 +1,30 @@
+<div class="wrapper">
+
+    <div class="header-content">
+        <app-header></app-header>
+    </div>
+
+    <div class="main-content">
+
+        <mat-sidenav-container *ngIf="shouldRun">
+
+            <mat-sidenav mode="side" opened>
+
+                <app-side-nav-bar></app-side-nav-bar>
+
+            </mat-sidenav>
+            <mat-sidenav-content>
+
+                <router-outlet></router-outlet>
+
+            </mat-sidenav-content>
+
+        </mat-sidenav-container>
+
+    </div>
+
+    <div class="footer-content">
+        <app-footer></app-footer>
+    </div>
+
+</div>

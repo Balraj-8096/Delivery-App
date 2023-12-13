@@ -1,0 +1,33 @@
+<div class="sidebar" [ngClass]="{'expanded': isExpanded}">
+  <div class="logo">
+    <div>
+      <img src="../../../../../assets/images/trainee.png" alt="Logo">
+      <span class="logo-text" *ngIf="isExpanded">Your Logo Name</span>
+    </div>
+    <div>
+      <button class="toggle-sidebar-button" (click)="toggleSidebar()">
+        <i class="fas fa-bars" *ngIf="!isExpanded"></i>
+        <i class="fas fa-times" *ngIf="isExpanded"></i>
+      </button>
+    </div>
+  </div>
+  <ul class="nav">
+
+    <li>
+      <i class="fas fa-home"></i>
+      <span class="nav-text" [class.hide-text]="!isExpanded">Home</span>
+    </li>
+
+    <li>
+      <i class="fas fa-user"></i>
+      <span class="nav-text" [class.hide-text]="!isExpanded">Profile</span>
+    </li>
+
+    <li>
+      <i class="fas fa-clipboard-list"></i>
+      <span class="nav-text" [class.hide-text]="!isExpanded">Category</span>
+    </li>
+
+  </ul>
+
+</div>

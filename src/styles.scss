@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "/src/assets/scss/user-variables.scss";
+@import "/src/assets/scss/user-common-styles.scss";
+@import "/src/assets/scss/user-animation.scss";
+@import "/src/assets/scss/user-styles.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 2rem;
+    scroll-behavior: smooth;
+    background-color: aliceblue;
+
+}
